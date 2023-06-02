@@ -74,3 +74,14 @@ h6 {
 #__next {
     isolation: isolate;
 }
+
+:root {
+    --color-primary: #217BF4;
+    --color-secondary: #FFAF2E;
+    --color-text: #0A093D;
+}
+
+body {
+    color: var(--color-text);
+    font-family: 'Inter', sans-serif;
+}
