@@ -277,3 +277,69 @@ a {
 .whats-netbooks__video {
     grid-row: 1 / -1;
 }
+
+.achievement {
+    display: grid;
+    grid-template-columns: 340px 340px 1fr;
+    gap: 1.5rem;
+}
+
+.achievement .card {
+    background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to bottom, rgba(185, 185, 185, 0.44), rgba(94, 94, 94, 0.58)) border-box;
+    /* Estos colores deberian estar en una variable */
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 3rem 1.125rem 2.5rem 2.5rem;
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.achievement .card a {
+    position: relative;
+    padding-right: 20px;
+}
+
+.achievement .card a:hover {
+    color: var(--color-primary);
+}
+
+/* .achievement .card a:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    background-image: url("/images/ico-arrow.svg");
+    width: 10px;
+    height: 10px;
+} */
+
+.achievement .card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.achievement .card:hover {
+    box-shadow: 0px 26px 49px black;
+    transform: translate(-4px, -4px);
+}
+
+.achievement .card__subtitle {
+    margin-bottom: 2.5rem;
+}
+
+.achievement .card__subtitle b {
+    color: var(--color-primary);
+}
+
+.achievement .card__content {
+    margin-bottom: 2rem;
+}
+
+.card.rating .card__title,
+.card.awards .card__title {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
