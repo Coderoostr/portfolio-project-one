@@ -212,6 +212,11 @@ p.section__subtitle {
 .header__nav a.active {
     color: #2B2B39;
     font-weight: bold;
+    transition: linear 0.03s;
+}
+
+.header__nav a:hover {
+    color: black;
 }
 
 .header__actions {
@@ -324,7 +329,7 @@ p.section__subtitle {
     grid-template-columns: 340px 340px 1fr;
     gap: 1.5rem;
     align-items: center;
-    margin-bottom: 11.25rem;
+    margin-bottom: 6rem;
 }
 
 .achievement .card {
@@ -379,6 +384,8 @@ p.section__subtitle {
 
 .community {
     background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #f1f6fd 20.5%, #f1f6fd 58.57%, #ffffff 100%);
+    padding: 5rem 0;
+    margin-bottom: 7.5rem;
 }
 
 .community__items {
@@ -440,7 +447,7 @@ p.section__subtitle {
 .team__tabs {
     background-color: var(--color-primary-10);
     width: 28.125rem;
-    margin: 0 auto;
+    margin: 2.5rem auto;
     display: flex;
     border-radius: 1rem;
     padding: 0.5rem;
@@ -463,7 +470,45 @@ p.section__subtitle {
     color: var(--color-primary);
 }
 
+.team__members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team__member-card {
+    text-align: center;
+    border: solid 1px #F3F3F3;
+    border-radius: 1rem;
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    padding: 2rem;
+}
+
+.team__member-card:hover {
+    box-shadow: 0px 26px 49px black;
+    transform: translate(-4px, -4px);
+}
+
 .team__tab--active {
     background-color: var(--color-primary);
     color: var(--color-white);
 }
+
+.team__member-picture {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team__member-avatar {
+    display: inline-block;
+    position: relative;
+}
+
+.team__member-name {
+    font-size: 1.5rem;
+}
+
+.team__member-username {}
